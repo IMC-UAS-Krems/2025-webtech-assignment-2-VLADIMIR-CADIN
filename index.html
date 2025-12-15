@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Restaurant Cadinio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+  <header>
+
+    <div class="container my-container">
+
+
+        <div class="header-content">
+
+            <a class="header-content__logo" href="#">Cadinio</a>
+
+
+            <nav>
+                <a class="checked" href="#home">Home</a>
+                <a href="#charity">Charity</a>
+                <a href="#menu">Menu</a>
+
+            </nav>
+
+
+            <div class="header-content__last">
+               
+
+               <button 
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cartModal">
+                    Cart (<span id="cartCount">0</span>)
+                </button>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main id="home">
+  <div class="container my-container">
+
+
+        <div class="main-content">
+
+            <div>
+                <div class="main-content_about">Restaurant Cadinio</div>
+
+
+                <h1>Italian Cuisine</h1>
+
+                <p>
+                Cadinio is one of the finest Italian restaurants, where authentic recipes,
+                fresh ingredients and passion for Italian food come together to create
+                an unforgettable dining experience.
+                </p>
+
+
+                <div class="main-content__buttons">
+                    <a href="#menu">
+                        View menu
+                    </a>
+
+                    <a href="#charity">
+                        Charity
+                    </a>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="img/main_bg.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<section class="charity" id="charity">
+  <div class="container my-container">
+
+
+        <div class="charity-inner">
+
+            <img src="img/charity.jpg" alt="Charity">
+
+
+            <div>
+                <h2>Charity <span>Program</span></h2>
+
+                <p>
+                    We donate <strong>5%</strong> of every order to charity.
+                  </p>
+
+              <ul class="charity-list">
+                <li>5% from each order</li>
+                <li>Discount for 3+ items (10%)</li>
+                <li>Summary shown after checkout</li>
+              </ul>
+
+
+                <a href="#menu">See our menu</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="menu" id="menu">
+  <div class="container my-container">
+
+
+    <h2>MENU</h2>
+
+    <div class="row g-4">
+
+ 
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/spg.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Spaghetti Carbonara</h5>
+        <p class="card-text">Classic Roman pasta with eggs, pecorino cheese and crispy guanciale.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€12.50</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Spaghetti Carbonara" data-price="12.50">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/gno.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Gnocchi al Pesto</h5>
+        <p class="card-text">Soft potato gnocchi served with basil pesto and parmesan.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€11.90</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Gnocchi al Pesto" data-price="11.90">Add</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/rov.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Ravioli Ricotta</h5>
+        <p class="card-text">Homemade ravioli filled with ricotta and spinach.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€13.20</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Ravioli Ricotta" data-price="13.20">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/pen.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Penne alla Vodka</h5>
+        <p class="card-text">Creamy tomato sauce with vodka, parmesan and basil.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€12.80</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Penne alla Vodka" data-price="12.80">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/ris.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Risotto ai Funghi</h5>
+        <p class="card-text">Creamy risotto with mushrooms, white wine and parmesan.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€14.50</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Risotto ai Funghi" data-price="14.50">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/spl.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Pizza Margherita</h5>
+        <p class="card-text">San Marzano tomato, mozzarella, basil and olive oil.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€10.90</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Pizza Margherita" data-price="10.90">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/lasan.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Lasagna</h5>
+        <p class="card-text">Layered pasta with beef ragù, béchamel and parmesan.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€15.90</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Lasagna" data-price="15.90">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/crysp.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Arancini</h5>
+        <p class="card-text">Crispy rice balls stuffed with mozzarella and ragù.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€8.50</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Arancini" data-price="8.50">Add</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/bruscet.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Bruschetta Classica</h5>
+        <p class="card-text">Toasted bread with tomatoes, garlic and basil.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€6.90</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Bruschetta Classica" data-price="6.90">Add</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/tiram.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Tiramisu</h5>
+        <p class="card-text">Coffee-soaked ladyfingers with mascarpone cream.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€7.50</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Tiramisu" data-price="7.50">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/Caprese.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Caprese Salad</h5>
+        <p class="card-text">Tomatoes, mozzarella and basil with olive oil.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€9.40</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Caprese Salad" data-price="9.40">Add</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card h-100 text-center">
+      <img src="img/Limoncello.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Limoncello Spritz</h5>
+        <p class="card-text">Refreshing drink with limoncello and sparkling wine.</p>
+      </div>
+      <div class="card-footer">
+        <strong>€8.90</strong><br>
+        <button class="btn btn-warning mt-2 add-to-cart" data-name="Limoncello Spritz" data-price="8.90">Add</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul id="cartList"></ul>
+        <p>Total: €<span id="cartTotal">0.00</span></p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button id="openCheckout" class="btn btn-success">Checkout</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="checkoutModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Checkout</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="checkoutForm">
+          <div class="mb-2">
+            <label class="form-label">Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+
+          <div class="mb-2">
+            <label class="form-label">Email</label>
+            <input id="email" class="form-control" type="email">
+          </div>
+
+          <div class="mb-2">
+            <label class="form-label">Phone</label>
+            <input id="phone" class="form-control" type="text" placeholder="numbers only">
+          </div>
+
+          <div class="mb-2">
+            <label class="form-label">Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+
+          <div class="mb-2">
+            <label class="form-label">ZIP</label>
+            <input id="zip" class="form-control" type="text" placeholder="max 6 chars">
+          </div>
+
+          <p id="formError" class="text-danger mt-2"></p>
+
+          <button class="btn btn-success mt-2" type="submit">Finish</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="confirmModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body" id="confirmBody"></div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="text-center py-4">
+  <div class="container my-container">
+    <small>© 2025 Cadinio — Charitable Purchase Demo (Frontend only)</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+<!-- https://www.youtube.com/watch?v=DlvYDLNtEgA -->
+<!-- https://www.youtube.com/watch?v=Dhbhps18YTE&t=710s -->
+<!-- https://www.youtube.com/watch?v=ZLMwB3Dr9hQ&t=1944s -->
+<!-- https://www.youtube.com/watch?v=E6n4N-PuOQA -->
+<!-- https://www.youtube.com/watch?v=87vdUTkN93g&t=455s -->
+<!-- https://www.youtube.com/watch?v=PK8zZtrFAKQ -->

@@ -1,0 +1,291 @@
+:root {
+    --black: #311F09;
+    --orange: #FF8A00;
+    --green: #3FA72F;
+    --white-orange: #FFE6C9;
+}
+
+body, html {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.my-container {
+  max-width: 1237px;
+  margin: 0 auto;
+}
+
+
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #fff;
+
+    padding: 20px 0;
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-content__logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 22px;
+    display: inline-block;
+
+    transition: color .35s ease, transform .35s ease;
+}
+
+.header-content__logo:hover {
+    color: var(--green);
+    transform: scale(1.05);
+}
+
+
+
+.header-content__last {
+    align-items: center;
+    display: flex;
+}
+
+
+nav {
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 25px;
+    color: var(--black);
+    display: inline-block;
+
+    transition: color .35s ease, transform .35s ease;
+}
+
+
+
+nav a:hover {
+    color: var(--green);
+    transform: scale(1.05);
+}
+
+nav a:last-of-type {
+    margin-right: 0;
+}
+
+nav a.checked {
+    color: var(--orange);
+}
+
+
+
+
+
+main {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 90px);
+}
+
+
+
+
+.main-content_about {
+    color: var(--orange);
+    background-color: var(--white-orange);
+    padding: 10px 34px;
+    border-radius: 126px;
+    display: inline-block;
+
+    margin-bottom: 22px;
+}
+
+.main-content h1 {
+    color: var(--black);
+    font-size: 80px;
+    line-height: 110%;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.main-content p {
+    line-height: 200%;
+    margin-bottom: 77px;
+    color: var(--black);
+}
+
+.main-content__buttons a:first-of-type {
+    padding: 17px 62px;
+    background-color: var(--orange);
+    border-radius: 162px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 23px;
+    display: inline-block;
+
+    transition: transform .4s ease;
+}
+
+.main-content__buttons a:last-of-type {
+    padding: 17px 55px;
+    background-color: var(--green);
+    border-radius: 162px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 23px;
+
+    transition: transform .4s ease;
+    display: inline-block;
+}
+
+.main-content__buttons a:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.charity-inner img {
+    width: 560px;
+    max-width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.charity {
+    background-color: rgba(63, 198, 110, 0.1);
+    padding-top: 147px;
+    padding-bottom: 132px;
+}
+
+
+
+
+.charity-inner {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+
+
+.charity-inner h2 {
+    font-size: 56px;
+    line-height: 110%;
+    margin-bottom: 20px;
+}
+
+
+
+.charity-inner h2 span {
+    color: var(--orange);
+} 
+
+.charity-inner p {
+    line-height: 180%;
+    max-width: 460px;
+    margin-bottom: 40px;
+    color: #5C4529;
+}
+
+.charity-inner a {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 17px 45px;
+    border-radius: 162px;
+    text-decoration: none;
+    display: inline-block;
+
+    transition: transform .3s ease;
+}
+
+
+
+
+.charity-inner li {
+    margin-bottom: 10px;
+    color: #5C4529;
+    font-size: 16px;
+}
+
+.charity-inner a:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.menu {
+    padding-top: 164px;
+    padding-bottom: 201px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 200%;
+    color: var(--black);
+    margin-bottom: 60px;
+}
+
+.charity-list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    color: #5C4529;
+    line-height: 200%;
+    font-size: 18px;
+}
+
+
+
+#home,
+#charity,
+#menu {
+    scroll-margin-top: 120px;
+}
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-color */
